@@ -89,6 +89,7 @@ describe('A calculateTrianglePerimeter function', () => {
     const figureCalculator = new FigureCalculator({});
 
     expect(() => figureCalculator.calculateTrianglePerimeter()).toThrowError();
+    expect(() => figureCalculator.calculateTrianglePerimeter(1)).toThrowError();
     expect(() => figureCalculator.calculateTrianglePerimeter(1, 2)).toThrowError();
     expect(() => figureCalculator.calculateTrianglePerimeter(1, 2, 3, 4)).toThrowError();
   });
