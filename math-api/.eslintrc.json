@@ -10,6 +10,7 @@
     "ecmaVersion": 2020
   },
   "rules": {
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "max-len": "off"
   }
 }

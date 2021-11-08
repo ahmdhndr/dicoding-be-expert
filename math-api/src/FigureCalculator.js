@@ -44,7 +44,7 @@ class FigureCalculator {
       throw new Error('fungsi hanya menerima parameter number');
     }
 
-    // formula: length * width
+    // formula: (side a + side b) + base
     return this._mathBasic.add(this._mathBasic.add(sideA, sideB), base);
   }
 
@@ -59,6 +59,7 @@ class FigureCalculator {
       throw new Error('fungsi hanya menerima parameter number');
     }
 
+    // formula: (base * height) / 2
     return this._mathBasic.divide(this._mathBasic.multiply(base, height), 2);
   }
 }
